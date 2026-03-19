@@ -1,0 +1,105 @@
+<html>
+<head>
+<title>Personal profile </title>
+<style>
+.center-text{
+text-align: center;
+}
+img {
+cursor: pointer;
+}
+.center-img{
+display: block;
+margin: 0 auto 40px auto;
+}
+.profile-table{
+margin: 0 auto;
+border-collapse: collapse;
+text-align: center;
+max-width: 100%;
+width: 90%;
+margin-top: 30px;
+}
+.profile-table, .profile-table th, .profile-table td{
+border: 1px solid black;
+padding: 8px;
+word-wrap: break-word;
+}
+</style>
+</head>
+<body style="font-size: 20px; background-size: cover;">
+<h2 class="center-text">Personal Profile</h2>
+<hr>
+<img src="karan.png" alt="Karan" height="300" width="250" class="center-img">
+<h3 id="fullName" class="center-text"></h3>
+<table class="profile-table">
+<tr>
+<th>D.O.B</th>
+<td>04/08/2007</td>
+</tr>
+<tr>
+<th>Home Town</th>
+<td><a href="https://amethi.nic.in/ target="_blank">Amethi</a></td>
+</tr>
+<tr>
+<th>Nationality</th>
+<td>Indian</td>
+</tr>
+<tr>
+<th>Education
+</th>
+<td>
+<ul>
+<li>High School:From CMP inter college  with 88% marks</li>
+<li>Intermediate:From CMP inter college  with 79% marks</li>
+<li>BTech:Pursuing from <a href="https://galgotiacollege.edu/home "target="_blank">GALGOTIAS
+COLLEGE OF ENGINEERING AND TECHNOLOGY</a> with course CSE(DS) with 8.82SCGPA</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Contact Details
+</td>
+<td>
+<ul>
+<li>Phone:6393159611</li>
+<li>Email:agrawalkaran778@gmail.com</li>
+<li><a href="https://www.instagram.com/karan____agrawal/" target=“_blank”>Instagram<a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Skills</td>
+<td>
+<ul>
+<li>HTML Basics</li>
+<li>C++ Basics</li>
+<li>C Basics</li>
+<li>Python</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Hobbies</td>
+<td>
+<ul>
+<li>playing cricket</li>
+</ul>
+</td>
+<script>
+window.onload = function() {
+console.log("Profile page loaded successfully");
+};
+class Person {
+constructor(fullName) {
+this.fullName = fullName;
+}
+showName() {
+document.getElementById("fullName").innerText = this.fullName;
+}
+}
+const Mannu = new Person("Karan Agrawal");
+Mannu.showName();
+</script>
+</body>
+</html>

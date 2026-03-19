@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Registration page</title>
+
+    </head>
+    <body style="background-color:rgb(231, 222, 222);">
+    
+           
+            <a href="home.html" style="margin-right: 60px; color: red;">Home</a>
+        <a href="login.html" style="margin-right: 50px;color: red;">Login</a>
+        <a href="Registration.html" style="margin-right: 50px;color: red;">Registration </a>
+        <a href="Catalogue.html" style="margin-left: 40px;color: red;">Catalogue</a><br>
+         <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Register</h1>
+            <form action="/register" method="post">
+                <fieldset>
+                    <legend>Personal information</legend>
+                    <label for="first name">First name*</label>
+                    <input type="text" id="first_name" name="first_name" required>
+
+                    <label for="last name">Last name*</label>
+                    <input type="text" id="last_name" name="last_name" required>
+
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone">
+
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob">
+
+                    <p>Gender</p>
+                    <label><input type="radio" name="gender" value="female">Female</label>
+                    <label><input type="radio" name="gender" value="male">Male</label>
+                    <label><input type="radio" name="gender" value="other">Other</label>
+
+                </fieldset>
+                <fieldset>
+                    <legend>Account details</legend>
+                    <label for="username">Username*</label>
+                    <input type="text" id="username" name="username" required>
+
+                    <label for="password">Password*</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <label for="confirm_password">Confirm Password*</label>
+                    <input type="password" id="confirm_password" name="confirm_password" required>
+                    <label for="country">Country</label>
+                    <select name="country" id="country">
+                        <option value="in">India</option>
+                        <option value="us">United State</option>
+                        <option value="au">Australia</option>
+                        <option value="pak">Pakistan</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="jap">Japan</option>
+                    </select>
+                    <label for="address">Address</label>
+                    <textarea name="address" id="address" rows="3"></textarea>
+                </fieldset>
+                <label ><input type="checkbox" name="terms" required> I am agree to The <a href="#">terms and conditions</a></label>
+                <button type="submit">Create Account</button>
+            </form>
+
+      
+        
+    </body>
+</html>
